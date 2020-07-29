@@ -1,0 +1,74 @@
+{
+  "name": "dow-electron-demo",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Electron / Vue demo",
+  "author": {
+    "email": "9356943215@qq.com",
+    "name": "Dow"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "eslint --ignore-path .eslintignore src",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "upgradePackages": "ncu -u -x @types/node"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "electron-context-menu": "^2.2.0",
+    "electron-store": "^6.0.0",
+    "electron-window-state": "^5.0.3",
+    "escape-string-regexp": "^4.0.0",
+    "tailwindcss": "^1.5.2",
+    "tmi.js": "^1.5.0",
+    "vue": "^2.6.11",
+    "vue-property-decorator": "^8.5.1",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {
+    "@electron/typescript-definitions": "^8.7.4",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@hokify/eslint-config-vue": "^0.4.4",
+    "@types/node": "12.12.42",
+    "@types/tmi.js": "^1.4.0",
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-plugin-typescript": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "css-loader": "^4.0.0",
+    "electron": "^9.1.1",
+    "electron-builder": "^22.8.0",
+    "eslint": "^7.5.0",
+    "husky": "^4.2.5",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^9.0.2",
+    "typescript": "^3.9.7",
+    "vue-cli-plugin-electron-builder": "^1.4.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "bugs": {
+    "url": "https://dowcore.github.io/Electron/"
+  },
+  "homepage": "https://dowcore.github.io/Electron/",
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+yourrepolink.git"
+  }
+}
