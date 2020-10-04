@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "dowcore <935693215@qq.com>",
   "description": "browser",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -56,12 +56,12 @@
     }
   },
   "dependencies": {
-    "vue": "^2.5.16",
-    "axios": "^0.18.0",
+    "vue": "^2.6.11",
+    "axios": "^0.19.2",
     "vue-electron": "^1.0.6",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vuex-electron": "^1.0.0"
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1",
+    "vuex-electron": "^1.0.3"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -75,14 +75,14 @@
     "cfonts": "^2.1.2",
     "chalk": "^2.4.1",
     "copy-webpack-plugin": "^4.5.1",
-    "cross-env": "^5.1.6",
+    "cross-env": "^7.0.2",
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
-    "electron": "^2.0.4",
-    "electron-debug": "^1.5.0",
-    "electron-devtools-installer": "^2.2.4",
-    "electron-builder": "^20.19.2",
+    "electron": "^9.1.1",
+    "electron-debug": "^3.1.0",
+    "electron-devtools-installer": "^3.1.1",
+    "electron-builder": "^22.8.0",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
@@ -117,13 +117,13 @@
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^15.2.4",
-    "vue-style-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.16",
-    "webpack-cli": "^3.0.8",
-    "webpack": "^4.15.1",
-    "webpack-dev-server": "^3.1.4",
-    "webpack-hot-middleware": "^2.22.2",
-    "webpack-merge": "^4.1.3"
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.12",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^5.0.9"
   }
 }
